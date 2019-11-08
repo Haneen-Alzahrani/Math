@@ -1,0 +1,68 @@
+
+
+/**
+ *
+ * @author hno0o
+ */
+import java.util.Scanner;
+public class MathOperationsJava {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.print("please Enter your name: ");
+        String str = input.next();
+          System.out.println("Hello,welcome " + str + " please choose from the menu: ");
+        System.out.println("**********************************");
+        System.out.println("- find power of a number ");
+        System.out.println("- find the min and max between two numbers ");
+        System.out.println("- find the ciel , floor and round of a number");
+        System.out.println("- find the square root of a number ");
+        System.out.println("- find the absolute value of a number ");
+        System.out.println("************************************");
+        System.out.println("Please Enter your Choice :" );
+        int x = input.nextInt();
+        
+        switch (x){
+            case 1:
+                System.out.println("******* power *******");
+               System.out.print("please Enter the based and power seperated by white space :");
+                int number1 = input.nextInt();
+                int number2 = input.nextInt();
+                System.out.println("- " +number1 +"-" +number2 +"Math power = " + Math.pow(number1, number2));
+            break;    
+            case 2:
+                System.out.println("******* min & Max *********");
+                System.out.println("please Enter two numbers seperated by white space :");
+                double n1 = input.nextDouble();
+                double n2 = input.nextDouble();
+                System.out.println("Math.max( " +n1+','+n2+')'+"=("+ Math.max(n1, n2) + ")");
+                System.out.println("Math.min(" +n1+','+ n2+')' +"=("+ Math.min(n1, n2)+ ")" );
+                
+            break;
+            case 3:
+                System.out.println("****** ciel & floor & Round ******");
+                double c1 = input.nextDouble();
+                System.out.println(" ceil value of "+c1+':' + Math.ceil(c1));
+                System.out.println("flor value of "+c1+ ':' + Math.floor(c1));
+                System.out.println("round value of "+c1+':' + Math.round(c1));
+                
+             break;
+            case 4:
+                System.out.println("***** Square root *****");
+                System.out.println("please Enter a number :");
+                double S1 =input.nextDouble();
+                System.out.println("Square root of " + S1+':'+ Math.sqrt(S1));
+             
+                
+                
+                
+                
+                
+        }
+    }
+    
+}
